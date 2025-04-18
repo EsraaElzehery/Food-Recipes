@@ -1,0 +1,146 @@
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    scroll-behavior: smooth;
+font-family:sans-serif
+}
+
+#container .box, #container1 .box{
+
+    /* display: flex; */
+    border: 1px rgba(128, 128, 128, 0.442) solid;
+    border-radius: 5px;
+    margin-bottom: 40px;
+
+}
+.box img{
+    width:280px;    
+}
+
+@media (max-width:768px) {
+    .box img{
+        width: fit-content;
+    }
+}
+.box .text{
+    margin: 8px;
+    padding-top: 3px;
+}
+.box .edit{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+.box i{
+    padding-left: 13px;
+}
+.box .edit{
+    border-top: 1px solid rgba(128, 128, 128, 0.329);
+    padding:8px 0;
+}
+.box .style{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    /* margin: 10px; */
+
+}
+.box .rate{
+    padding: 2px;
+    margin-left: 10px;
+    color: grey;
+}
+.box .style img{
+    width: 40px;
+}
+.box .btn{
+    color: brown;
+    border: 1px solid brown;
+    padding: 5px 10px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    border-radius: 6px; 
+margin-left: 12px;
+cursor: pointer;
+}
+.box .cal{
+    color: grey;
+}
+.box .fa-solid {
+    color: rgba(165, 42, 42, 0.736);
+}
+/* detailss */
+
+        
+        .ingredients #recipe-ingredients {
+    list-style:circle;
+
+    
+}
+.instructions ul{
+    list-style:decimal
+}
+
+
+
+#container3 .box3 img{
+width: 170px;
+border-radius: 100%;
+text-align: center;
+padding-bottom: 10px;
+margin-left: auto;
+margin-right: auto;
+}
+#container3 .box3 .text{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    padding-bottom: 10px;
+    
+}
+#menu{
+    position: relative;
+    width: 50px;
+    height: 20px;
+    
+}
+@media (min-width:768px) {
+    #menu{
+        display: none;
+    }
+}
+
+
+/* @media (max-width:768px) {
+    #ul-menu{
+        display: none;
+    }
+} */
+ @media (max-width:768px) {
+    
+ 
+.active{
+    display: block;
+  position: absolute;
+top: 76px;
+background-color:white;
+width: 90%;
+height: 50%;
+right: 0px;
+/* transform: translateX(0); */
+transition: 1s;
+}
+ }
+.active li{
+    padding: 10px 5px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}

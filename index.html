@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Food Recipies</title>
+</head>
+<body>
+
+        <!-- header -->
+<div class="flex items-center justify-between py-6 md:px-16 lg:px-16 px-4 bg-red-100 ">
+    <div class="flex items-center gap-2">
+        <i class="fa-solid fa-utensils text-black"></i>
+    <h1 class=" text-xl font-bold ">Food <span class="text-red-800 text-xl font-bold" >Recipes</span></h1>
+
+    </div>
+    
+       
+    <ul id="ul-menu" class=" md:flex-row lg:flex hidden items-center justify-between gap-10 " >
+        <li class="font-semibold cursor-pointer "><a href="#Home">Home</a></li>
+    <li class="font-semibold cursor-pointer"><a href="#Recipe">Recipe</a></li>
+        <li class="font-semibold cursor-pointer"><a href="#Blog">Blog</a></li>
+        <li class="font-semibold cursor-pointer" ><a href="#Contact">Contact</a></li>
+</ul> 
+<i id="menu" class="fa-solid fa-bars text-black md:hidden lg:hidden block  cursor-pointer " ></i>
+    <div class="md:flex gap-5 hidden">
+        <button class="px-6 py-2 font-semibold bg-red-800 rounded-md text-white shadow-md shadow-gray-200 cursor-pointer">Log in</button>
+        <button class="px-6 py-2 font-semibold bg-gray-100 rounded-md shadow-md cursor-pointer ">Sign up</button>
+
+    </div>
+    
+
+
+</div>
+<!--heroo  -->
+<div class="max-w-7xl mx-auto px-5 sm:px-5 md:px-10" >
+<div class="py-20 lg:flex md:flex sm:flex-col-1 items-center justify-between" id="Home">
+    <div class="space-y-10">
+        <h1 class="lg:text-5xl md:text-3xl text-2xl md:text-start text-center sm:w-[100%] font-bold md:w-[50%]">Your Daily Dish A <span class="text-red-800">Food</span> Jourany</h1>
+        <p class="text-gray-400 font-semibold md:text-start text-center md:w-[70%]">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Neque reprehenderit autem nihil! Earum, tempore laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, quisquam.</p>
+             <div class="space-y-2 text-center md:text-start">
+        <button class=" font-semibold px-6 py-2 bg-red-800 rounded-md text-white shadow-md shadow-gray-200 cursor-pointer">Sign up</button>
+        <p class="text-gray-400 font-semibold">Do you have an account? <span class="text-red-800 cursor-pointer">Log in</span></p>
+    </div>
+    </div>
+
+    <img src="./assets/gallery5.jpeg" class="relative mx-auto rounded-full md:w-[400px] lg:w-[460px] pt-10 w-[300px]"/>
+    <div class=" hidden  lg:block absolute  py-3 rounded shadow-md space-y-1 w-[230px] px-5 md:px-0 lg:px-0 lg:w-[300px] bg-gray-100 right-[30%] bottom-[-130px] lg:bottom-50 ">
+        <div class=" flex gap-10 justify-between  relative ">
+<img src="./assets/photo_2025-04-03_19-05-58.jpg" class="md:w-[68px] lg:w-[68px] w-[55px] rounded-full absolute top-[-25px] left-[-20px]"/>
+<div class="pl-15">
+<p class="">Esraa</p>
+<i class="fa-solid fa-star text-red-800 w-3 h-3"></i>
+<i class="fa-solid fa-star text-red-800 w-3 h-3"></i>
+<i class="fa-solid fa-star text-red-800 w-3 h-3"></i>
+<i class="fa-solid fa-star text-red-800 w-3 h-3"></i>
+</div>
+</div>
+<p class="px-3 text-sm ">Lorem ipsum dolor sit consectetur adipisicing elit. Magnam, nulla?</p>
+    </div>
+</div>
+<!-- blogg -->
+ <div class="md:py-28 lg:py-30 py-20  md:flex  lg:flex flex-col-1 items-center justify-between  gap-30">
+    <img src="./assets/food9.jpeg" class="rounded mx-auto md:w-[390px] w-[300px] lg:w-[390px]"/>
+    <div class= " space-y-5 lg:space-y-8 md:space-y-8 mx-auto lg:pt-0 md:pt-0 pt-6">
+        <h1 class="text-center font-semibold text-2xl lg:text-4xl md:text-4xl">Share Your <span class=" text-2xl lg:text-4xl md:text-4xl text-red-800">Recipies</span></h1>
+        <p class=" text-center text-gray-400 font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Minima aliquam impedit minus ducimus distinctio culpa veniam doloremque ea assumenda ratione?Lorem ipsum dolor sit amet.</p>
+          <div class="text-center items-center">  <button class="text-center px-6 py-2 font-semibold bg-red-800 rounded-md text-white shadow-md shadow-gray-200">
+                Create ypur recipe</button>
+    </div>
+    </div>
+ </div>
+ <!-- Recipes -->
+  <div id="Recipe">
+  <div id="container" class="md:pt-28 lg:pt-28 pt-18 place-items-center md:flex lg:flex md:flex  flex-col-1 flex-wrap 
+   lg:justify-between gap-5 ">
+
+  </div>
+  </div>
+ <!-- blogs -->
+
+ <div id="Blog" class='md:py-26 lg:py-26 py-20'>
+<h1 class='text-3xl font-bold '>Blog</h1>
+<h5 class='text-red-800 text-lg text-end cursor-pointer'>View more</h5>
+<div class="md:flex lg:flex flex-col-1 items-center space-y-4 md:space-y-0 lg:space-y-0  justify-center lg:justify-between
+ place-items-center gap-20 lg:gap-16 py-4 lg:py-10 md:py-10">
+<div class="border-1 border-gray-200 md:w-[400px] lg:w-[550px] rounded">
+    <img src="./assets/home_bg.jpeg" class="w-fit"/>
+    <div class="  px-2 py-4 space-y-1 lg:w-[550px] md:w-[400px] text-center">
+    <h2 class="text-xl font-semibold">Unlocking the Benefits of Intermitten Fating</h2>
+    <p class="text-sm text-gray-700">Lorem ipsum dolor sit amet,
+         consectetur adipisicing elit. Labore illum facilis dicta eos fugit minus, exercitationem quasi reiciendis in accusantium?</p>
+</div>
+
+</div>
+<div class="border-1 border-gray-200 md:w-[400px] lg:w-[550px] rounded ">
+    <img src="./assets/home_bg.jpeg" class="w-fit"/>
+    <div class="  px-2 py-4 space-y-1 lg:w-[550px] md:w-[400px] text-center">
+    <h2 class="text-xl font-semibold">Unlocking the Benefits of Intermitten Fating</h2>
+    <p class="text-sm text-gray-700">Lorem ipsum dolor sit amet,
+         consectetur adipisicing elit. Labore illum facilis dicta eos fugit minus, exercitationem quasi reiciendis in accusantium?</p>
+</div>
+
+</div>
+
+</div>
+</div>
+<!-- Explore recipe -->
+<div class="py-8">
+<h1 class='text-3xl font-bold pb-6'>Explore Recipes</h1>
+<h5 class='text-red-800 text-lg text-end cursor-pointer'>View more</h5>
+<div id="container1" class="md:py-10 lg:py-10 py-8 place-items-center md:flex lg:flex md:flex  flex-col-1 flex-wrap 
+lg:justify-between gap-5 ">
+
+</div>
+</div>
+
+</div>
+ <!-- banner -->
+<div class="text-center py-26 bg-red-100">
+    <div class="md:w-[800px] w-[300px] mx-auto text-center space-y-5">
+    <h1 class="text-3xl font-bold">Let's Stay In Touch!</h1>
+    <p class="text-gray-400 lg:text-xl text-sm md:text-xl font-semibold text-center lg:w-[500px] md:w-[500px] mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Deserunt possimus illo facere in saepe</p>
+        
+    <form class=" mx-auto place-items-center text-center space-y-4 md:space-y-0 lg:space-y-0">
+        <input placeholder="Enter your email" class="px-2 py-2 focus:outline-none outline:ring-2 outline:ring-blue-400 
+        border-1 border-gray-400 md:w-[420px] lg:w-[420px] w-[90%] rounded bg-gray-100"/>
+      <span class="pl-4">  <button type="button" class="bg-red-800 text-white px-6 py-2 rounded">Subscribe</button></span>
+    </form>
+</div>
+</div>
+<!-- popular catagoreyy -->
+<div class="max-w-7xl mx-auto px-5 md:py-28 lg:py-28 py-20 mt-16 place-items-center">
+    <div class="">
+    <h1 class='text-3xl font-bold pb-6'>Popular Categories</h1>
+    <h5 class='text-red-800 text-lg text-end cursor-pointer'>View more</h5>
+
+    <div id="container3" class="py-10 md:flex lg:flex flex-col-1 flex-wrap gap-22 mb-10 md:mb-0 lg:mb-0 text-center  place-items-center mx-auto items-center justify-between ">
+
+    </div>
+    </div>
+
+    
+    <!-- nav -->
+     <div id="Contact" class="md:flex lg:flex flex-col-1  place-items-center mx-auto md:pt-28 lg:pt-28 items-center justify-center px-20">
+        <img src="./assets/amazon.png"/>
+        <img src="./assets/dribbble.png"/>
+        <img src="./assets/google.png"/>
+        <img src="./assets/dribbble.png"/>
+        <img src="./assets/amazon.png"/>
+
+     </div>
+</div>
+
+<div class="bg-gray-100">
+<div class="max-w-7xl mx-auto border-b-1 border-gray-300 py-10 md:flex lg:flex flex-col-1 place-items-center justify-between gap-30 items-center">
+<div class=" md:w-[30%] lg:w-[30%] md:text-start lg:text-start text-center py-4 md:py-0 lg:py-0 space-y-3 md:px-5">
+    <h1 class="text-3xl font-semibold">Food <span class="text-red-800">Recipe</span></h1>
+    <p class="text-gray-600 px-2 md:px-0 lg:px-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, accusantium!</p>
+</div>
+<div class="flex items-center text-center gap-9 py-4 md:py-0 lg:py-0 px-4 place-items-center md:px-0 lg:px-0">
+<div class="">
+    <h2 class="py-4 font-semibold">Quick links</h2>
+    <ul class="space-y-3"> 
+        <li class="text-gray-600">Home</li>
+        <li class="text-gray-600">Recipe</li>
+        <li class="text-gray-600">Blog</li>
+    </ul>
+</div>
+<div class="">
+    <h2 class="py-4 font-semibold">Quick links</h2>
+    <ul class="space-y-3"> 
+        <li class="text-gray-600">Home</li>
+        <li class="text-gray-600">Recipe</li>
+        <li class="text-gray-600">Blog</li>
+    </ul>
+</div>
+<div class="text-start">
+    <h2 class="pb-3 md:pb-0 text-start font-semibold">Legal</h2>
+    <ul class="space-y-3 pb-6"> 
+        <li class="text-gray-600">Terms of use</li>
+        <li class="text-gray-600">Privacy & cookies</li>
+    </ul>
+</div>
+
+
+</div>
+<div class="text-center space-y-3 py-8 md:py-0 lg:py-0 md:px-5">
+    <h1 class="text-center text-xl font-semibold">Newsletter</h1>
+    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur</p>
+    <form class="space-y-3">
+        <input placeholder="Enter ypur email" class="border-1 border-gray-400 px-2 py-2 bg-white md:w-[100%] lg:w-[100%] w-[80%] rounded"/>
+        
+            <button type="button" class="block text-center bg-red-800 text-white mx-auto px-4 rounded py-2 md:w-[100%] lg:w-[100%] w-[80%]  cursor-pointer font-semibold">Subscribe</button>
+        
+    </form>
+</div>
+</div>
+<div class="max-w-7xl mx-auto md:py-8 lg:py-8 py-4 md:flex lg:flex flex-col-1  items-center justify-between px-2 md:px-4 lg:px-0">
+    <h class="text-gray-600 text-sm">@2025 RecipeLogo. All Right Reserved</h>
+    <div class="py-3 md:py-0 lg:py-0">
+        <i class="fa-brands fa-tiktok px-3 "></i>
+        <i class="fa-brands fa-x-twitter px-3"></i>
+        <i class="fa-brands fa-facebook-f px-3"></i>
+        <i class="fa-brands fa-instagram px-3"></i>
+    </div>
+</div>
+</div>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
